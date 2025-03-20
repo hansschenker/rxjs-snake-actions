@@ -1,13 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>RxJS Snake Game</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <h1>RxJS Snake Game</h1>
+      <div class="game-container">
+        <canvas id="game-canvas"></canvas>
+      </div>
+      
+      <div class="controls">
+        <button id="btn-left">← Left</button>
+        <button id="btn-up">↑ Up</button>
+        <button id="btn-down">↓ Down</button>
+        <button id="btn-right">→ Right</button>
+        <button id="btn-faster">+ Speed Up</button>
+        <button id="btn-slower">- Speed Down</button>
+        <button id="btn-restart">Restart</button>
+      </div>
+      
+      <div class="instructions">
+        <p>Use arrow keys to control the snake. Press + to speed up, - to slow down, and R to restart.</p>
+        <p>Eat the red apples to grow and earn points. Don't hit the walls or yourself!</p>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
